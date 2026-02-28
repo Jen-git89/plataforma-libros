@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log("Servidor corriendo");
+  console.log(`Servidor corriendo en puerto ${PORT}`);
 });
 
 function layout(contenido) {
@@ -1476,6 +1476,6 @@ app.post("/editar/:id", verificarLogin, soloAdmin, (req, res) => {
     res.redirect("/usuarios");
 });
 
-app.listen(3000, () => {
-    console.log("Servidor rodando em http://localhost:3000");
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Servidor iniciado");
 });
