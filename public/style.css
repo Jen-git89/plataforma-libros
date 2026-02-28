@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f4f6f9, #e3edf7);
+    color: #333;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #5E60CE;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
+
+.hero {
+padding: 80px 20px;
+    text-align: center;
+    }
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+.info {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.info ul {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.logo {
+    width: 200px;
+    display: block;
+    margin: 40px auto 20px auto;
+}
+
+.formulario {
+    max-width: 400px;
+    margin: 30px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+    outline: none;
+    border-color: #1e3a5f;
+    box-shadow: 0 0 5px rgba(30,58,95,0.2);
+}
+
+.formulario button {
+    padding: 12px;
+    background: linear-gradient(90deg, #1e3a5f, #16314d);
+    color: white;
+border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    transform: translateY(-2px);
+box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+a {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+th {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 15px;
+text-align: center;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background-color: #f9fbfd;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    width: 85%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.boton {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #1e3a5f;
+    color: white;
+border-radius: 6px;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #16314d;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.panel-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.panel-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #4B2E1E;
+}
+
+.panel-role {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #777;
+}
+
+.notification {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.notification a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #4B2E1E;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.dashboard a {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #4B2E1E;
+    text-decoration: none;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.dashboard a:hover {
+    transform: translateY(-6px);
+    background-color: #4B4FCF;
+    color: white;
+}
+
+.logout {
+    background-color: #1C1C1C !important;
+    color: white !important;
+}
+
+.logout:hover {
+    background-color: #000 !important;
+    color: white !important;
+    transform: translateY(-6px);
+}
+
+.page-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
