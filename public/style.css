@@ -255,3 +255,93 @@ h1, h2, h3 {
     max-width: 1100px;
     margin: 50px auto;
 }
+
+/* ===================== MOBILE VERSION ===================== */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .navbar img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* INFO CARD */
+  .info {
+    width: 92%;
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 18px;
+  }
+
+  /* FORMULARIOS */
+  .formulario {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .formulario input,
+  .formulario select,
+  .formulario textarea {
+    width: 100%;
+  }
+
+  /* TABLAS */
+  table {
+    display: block;
+    overflow-x: auto;
+    font-size: 13px;
+  }
+
+  /* PANEL */
+  .panel-container {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  .panel-title {
+    font-size: 22px;
+  }
+
+  /* DASHBOARD */
+  .dashboard {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .dashboard a {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  /* BOTONES */
+  .boton {
+    width: 100%;
+    text-align: center;
+  }
+
+}
